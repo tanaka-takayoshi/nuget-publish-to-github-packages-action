@@ -13,6 +13,10 @@ inputs:
   token:  # id of input
     description: 'access token'
     required: true
+  skip-duplicate:  # id of input
+    description: 'skip publishing duplicated package(s)'
+    required: true
+    default: 'true'
 runs:
   using: 'node12'
   main: 'dist/index.js'

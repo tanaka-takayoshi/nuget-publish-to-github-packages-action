@@ -1615,7 +1615,7 @@ try {
 </configuration>`;
 	console.log(xml);
 	fs.writeFileSync("nuget.config", xml);
-	exec.exec("dotnet", ["nuget", "push", path, "--source", "github"]);
+	exec.exec("dotnet", ["nuget", "push", path, "--source", "github", "--skip-duplicate"], {failOnStdErr: true});
 } catch (error) {
   core.setFailed(error.message);
 }

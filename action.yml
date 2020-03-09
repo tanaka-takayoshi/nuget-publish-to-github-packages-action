@@ -4,7 +4,6 @@ inputs:
   nupkg-path:  # id of input
     description: 'Path of NuPkg'
     required: true
-    default: './artifacts'
   repo-owner:  # id of input
     description: 'package repository owner'
     required: true

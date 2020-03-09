@@ -1,5 +1,8 @@
 name: 'Push Nupkg to GitHub Packages'
 description: 'This cross-platform action publishes Nupkg to GitHub Packages.'
+branding:
+  icon: 'package'  
+  color: 'green'
 inputs:
   nupkg-path:  # id of input
     description: 'Path of NuPkg'

@@ -1,5 +1,5 @@
 name: 'Push Nupkg to GitHub Packages'
-description: 'Greet someone and record the time'
+description: 'This cross-platform action publishes Nupkg to GitHub Packages.'
 inputs:
   nupkg-path:  # id of input
     description: 'Path of NuPkg'

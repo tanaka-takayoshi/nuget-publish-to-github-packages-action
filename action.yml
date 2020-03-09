@@ -1,0 +1,19 @@
+name: 'Push Nupkg to GitHub Packages'
+description: 'Greet someone and record the time'
+inputs:
+  nupkg-path:  # id of input
+    description: 'Path of NuPkg'
+    required: true
+    default: './artifacts'
+  repo-owner:  # id of input
+    description: 'package repository owner'
+    required: true
+  gh-user:  # id of input
+    description: 'user account'
+    required: true
+  token:  # id of input
+    description: 'access token'
+    required: true
+runs:
+  using: 'node12'
+  main: 'dist/index.js'

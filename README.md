@@ -27,7 +27,7 @@ This cross-platform action publishes Nupkg to GitHub Packages. .NET Core CLI is 
 ## Example usage
 
 ```yaml
-uses: tanaka-takayoshi/nuget-publish-to-github-packages-action@v2.0
+uses: tanaka-takayoshi/nuget-publish-to-github-packages-action@v2.1
 with:
   nupkg-path:  './artifacts/*.nupkg'
   repo-owner:  'tanaka-takayoshi'

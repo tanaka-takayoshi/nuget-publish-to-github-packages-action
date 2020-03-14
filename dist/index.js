@@ -284,7 +284,9 @@ try {
 	if (core.isDebug()) {
 		params.push("-v", "diag");
 	}
-	exec.exec("dotnet", params, {failOnStdErr: true});
+	exec.exec("dotnet", params, {failOnStdErr: true}).catch(err => {
+		core.setFailed(err);
+	});
 } catch (error) {
   core.setFailed(error.message);
 }
